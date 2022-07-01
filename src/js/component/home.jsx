@@ -3,24 +3,91 @@ import React from "react";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
-//create your first component
+//Componente PRINCIPAL, ES EL QUE SE EXPORTA
+//CERRAR ETIQUETAS DE IMÁGENES!!
+
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div>
+			<div id="navbar">
+				<Navbar />
+			</div>
+			<div id="Contenedor principal" className="container">
+				<div id="body">
+					<div id="upperBody">
+						<Jumbotron />
+					</div>
+					<div id="lowerBody">
+						<div class="row">
+							<div className="col-md-6 col-lg-3"><Card /></div>
+							<div className="col-md-6 col-lg-3"><Card /></div>
+							<div className="col-md-6 col-lg-3"><Card /></div>
+							<div className="col-md-6 col-lg-3"><Card /></div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer" className="container-fluid">
+				<Footer />
+			</div>
 		</div>
 	);
 };
 
 export default Home;
+
+//COMPONENENTES SUELTOS
+
+const Card = () => {
+	return(
+		<div className="card">
+			<img src="https://picsum.photos/500/325" class="card-img-top" alt="..." /> 
+			<div class="card-body">
+				<h5 className="card-title">Card title</h5>
+				<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+	);
+}
+
+const Jumbotron = () => {
+	return(
+		<div class="h-100 p-5 bg-light border rounded-3">
+          <h1>A warm welcome!</h1>
+          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+          <button class="btn btn-primary" type="button">Call to action</button>
+        </div>
+	);
+}
+
+const Footer = () => {
+	return(
+		<div className="text-center py-3"><span>© 2022 Copyright:   </span>
+  		  <a href="/">Sergio Centenera Mayoral</a>
+  		</div>
+	);
+}
+
+const Navbar = () => {
+	return(
+		<div>
+			<nav className="navbar">
+				<div className="container-fluid">
+					<div>
+						<a className="navbar-brand text-white" href="#">
+							Start Bootstrap
+						</a>
+					</div>
+					<div className="d-flex">
+						<a class="nav-link text-white" href="#">Home</a>
+						<a class="nav-link text-white" href="#">About</a>
+						<a class="nav-link text-white" href="#">Services</a>
+						<a class="nav-link text-white" href="#">Contact</a>
+					</div>
+        		  
+				</div>
+			</nav>
+  		</div>
+	);
+}

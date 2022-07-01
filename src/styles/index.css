@@ -1,12 +1,33 @@
+#lowerBody{
+    display: flex;
+    margin: auto;
+}
 
-/* 
+.card {
+    margin: 8px;
+    width: 23rem;
+}
 
-    You can write your own styles here...
+.card-body{
+    text-align: center;
+}
+
+.col-md-6{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+}
+
+#navbar{
+    background-color: black;
     
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+}
