@@ -71,23 +71,23 @@ const Footer = () => {
 
 const Navbar = () => {
 	return(
-		<div>
-			<nav className="navbar">
-				<div className="container-fluid">
-					<div>
-						<a className="navbar-brand text-white" href="#">
-							Start Bootstrap
-						</a>
+		<div className="container-fluid">
+			<nav className="navbar navbar-expand-md navbar-dark">
+				<a href="#" className="navbar-brand">Start Bootstrap</a>
+				<button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+					<span className="navbar-toggler-icon "></span>
+				</button>
+				
+				<div id="menuNavegacion" className="collapse navbar-collapse justify-content-end">
+					<div className="navbar-nav">
+						<a class="nav-item nav-link active" href="#">Home</a>
+						<a class="nav-item nav-link" href="#">About</a>
+						<a class="nav-item nav-link" href="#">Services</a>
+						<a class="nav-item nav-link" href="#">Contact</a>
 					</div>
-					<div className="d-flex">
-						<a class="nav-link text-white" href="#">Home</a>
-						<a class="nav-link text-white" href="#">About</a>
-						<a class="nav-link text-white" href="#">Services</a>
-						<a class="nav-link text-white" href="#">Contact</a>
-					</div>
-        		  
 				</div>
 			</nav>
-  		</div>
+		</div>
 	);
 }
+
