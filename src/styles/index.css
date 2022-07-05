@@ -31,3 +31,19 @@ h1{
     
     
 }
+
+#head {
+    min-height: 10vh;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    height: 80%;
+}
+
+#footer {
+    min-height: 10vh;
+    margin-top: auto;
+}

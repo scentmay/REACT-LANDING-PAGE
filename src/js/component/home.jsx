@@ -9,26 +9,33 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 	return (
 		<div>
-			<div id="navbar">
-				<Navbar />
+			<div id="head">
+				<div id="navbar">
+					<Navbar />
+				</div>
 			</div>
-			<div id="Contenedor principal" className="container">
 				<div id="body">
-					<div id="upperBody">
-						<Jumbotron />
-					</div>
-					<div id="lowerBody">
-						<div class="row">
-							<div className="col-md-6 col-lg-3"><Card /></div>
-							<div className="col-md-6 col-lg-3"><Card /></div>
-							<div className="col-md-6 col-lg-3"><Card /></div>
-							<div className="col-md-6 col-lg-3"><Card /></div>	
+					<div id="Contenedor principal" className="container">
+						<div id="body">
+							<div id="upperBody">
+								<Jumbotron />
+							</div>
+							<div id="lowerBody">
+								<div class="row">
+									<div className="col-md-6 col-lg-3"><Card /></div>
+									<div className="col-md-6 col-lg-3"><Card /></div>
+									<div className="col-md-6 col-lg-3"><Card /></div>
+									<div className="col-md-6 col-lg-3"><Card /></div>	
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div id="footer" className="container-fluid">
-				<Footer />
+			
+			<div id="footer">
+				<div id="footer" className="container-fluid">
+					<Footer />
+				</div>
 			</div>
 		</div>
 	);
